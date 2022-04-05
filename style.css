@@ -1,0 +1,92 @@
+body {
+	background-color: #212121;
+	color: #eee;
+	width: 80%;
+	margin: 0 auto;
+	font-family: 'Fira Code', monospace;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+}
+
+button {
+	color: #72A98F;
+	background-color: #212121;
+	border: 1px solid #72A98F;
+	padding: 10px;
+	transition: all .2s ease-in-out;
+}
+
+button:hover, button:active {
+	background-color: #72A98F;
+	border: 1px solid #72A98F;
+	color: #212121;
+	cursor: pointer;
+}
+
+.CodeMirror {
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+	border: 1px solid #545454;
+	padding: 10px;
+}
+
+.output {
+	border: 1px solid #545454;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-top: none;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+}
+
+em.faded {
+	color: #707070;
+}
+
+header {
+	margin: 15px 0;
+	font-style: italic;
+}
+
+a {
+	color: #72A98F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	filter: brightness(120%);
+}
+
+footer {
+	border-top: 1px solid #545454;
+	padding: 20px;
+	height: auto;
+	margin-top: auto;
+	width: 100%;
+	backdrop-filter: blur(8px);
+}
+
+.heart {
+	color: #c1423f;
+}
+
+.bottom-bar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.bottom-bar .time {
+	padding: 11px;
+	font-size: 14px;
+}

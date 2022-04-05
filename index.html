@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Document</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css' integrity='sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito&display=swap' rel='stylesheet'>
+
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css' integrity='sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material-darker.min.css' integrity='sha512-2OhXH4Il3n2tHKwLLSDPhrkgnLBC+6lHGGQzSFi3chgVB6DJ/v6+nbx+XYO9CugQyHVF/8D/0k3Hx1eaUK2K9g==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+		<link rel='stylesheet' href='style.css' />
+	</head>
+	<body>
+		<header>
+			<nav><a href='/about'>About</a> • <a href='/previous'>Previous Problems</a> • <a href='/leaderboard'>Leaderboard</a><nav>
+		</header>
+
+		<h1>FizzBuzz (#0)</h1>
+
+		<p>
+			Print the numbers from 1 to 100 inclusive, each on their own line.
+			If, however, the number is a multiple of three then print Fizz instead, and if the number is a multiple of five then print Buzz.
+			If multiple conditions hold true then all replacements should be printed, for example 15 should print FizzBuzz.
+		</p>
+
+		<div id='code'></div>
+		<div class='output'>
+			<em class='faded'>Your program's output will show up here.</em>
+			<p>FizzBuzz</p>
+		</div>
+		<div class='bottom-bar'>
+			<span><button>Run</button> or <kbd>ctrl</kbd> + <kbd>enter</kbd></span>
+			<span class='time'><span id='timestring'>24h 00m</span> remaining until next puzzle</span>
+		</div>
+
+		<footer>
+			Made with <span class='heart'>&hearts;</span> by <a href='https://twitter.com/SiddharthShyniben'>Siddharth Shyniben</a>
+		</footer>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js' integrity='sha512-xwrAU5yhWwdTvvmMNheFn9IyuDbl/Kyghz2J3wQRDR8tyNmT8ZIYOd0V3iPYY/g4XdNPy0n/g0NvqGu9f0fPJQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js' integrity='sha512-IS1FyxQkiJHT1SAvLXBaJu1UTFSIw0GT/DuzxHl69djqyLoEwGmR2davcZUnB8M7ppi9nfTGZR/vdfqmWt+i6A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+		<script src='https://codemirror.net/3/addon/edit/closebrackets.js'></script>
+		<script src='main.js'></script>
+	</body>
+</html>
