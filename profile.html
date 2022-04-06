@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Document</title>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css' integrity='sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito&display=swap' rel='stylesheet'>
+
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css' integrity='sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material-darker.min.css' integrity='sha512-2OhXH4Il3n2tHKwLLSDPhrkgnLBC+6lHGGQzSFi3chgVB6DJ/v6+nbx+XYO9CugQyHVF/8D/0k3Hx1eaUK2K9g==' crossorigin='anonymous' referrerpolicy='no-referrer' />
+		<link rel='stylesheet' href='style.css' />
+	</head>
+	<body>	
+		<header>
+			<div class='buttons'>
+				<a href='/about'>About</a> •
+				<a href='/previous'>Previous Problems</a> •
+				<a href='/leaderboard'>Leaderboard</a>
+			</div>
+
+			<div class='auth'>
+				<button id='login'>Log in</button>
+				<button id='logout'>Log out</button>
+
+				<a href='/profile' id='profile-link'>
+					<img id='profile-img' src='https://avatars2.githubusercontent.com/u/1709898?s=460&u=e8f9c8f8f9f8f9f9f9f9f9f9f9f9f9f9f9f9f9f9&v=4' alt='profile' />
+				</a>
+			</div>
+		</header>
+		<div id='profile-page'>
+			<h1 id='nickname'>Loading...</h1>
+			<p>TODO: stats</p>
+		</div>
+		<footer>
+			<span>Made with <span class='heart'>&hearts;</span> by <a href='https://twitter.com/SiddharthShyniben'>Siddharth Shyniben</a></span>
+			<em id='isin' class='faded'></em>
+		</footer>
+		<script src='https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js'></script>
+		<script src='main.js'></script>
+	</body>
+</html>
