@@ -16,7 +16,22 @@
 	</head>
 	<body>
 		<header>
-			<nav><a href='/about'>About</a> • <a href='/previous'>Previous Problems</a> • <a href='/leaderboard'>Leaderboard</a><nav>
+			<!-- <nav><a href='/about'>About</a> • <a href='/previous'>Previous Problems</a> • <a href='/leaderboard'>Leaderboard</a><nav> -->
+			<span>
+				<a href='/about'>About</a> •
+				<a href='/previous'>Previous Problems</a> •
+				<a href='/leaderboard'>Leaderboard</a>
+			</span>
+
+			<span>
+				<button id='login'>Log in</button>
+				<button id='logout'>Log out</button>
+
+				<a href='/profile' id='profile-link'>
+					<!-- fake placeholder image -->
+					<img id='profile-img' src='https://avatars2.githubusercontent.com/u/1709898?s=460&u=e8f9c8f8f9f8f9f9f9f9f9f9f9f9f9f9f9f9f9f9&v=4' alt='profile' />
+				</a>
+			</span>
 		</header>
 
 		<h1>FizzBuzz (#0)</h1>
@@ -38,12 +53,14 @@
 		</div>
 
 		<footer>
-			Made with <span class='heart'>&hearts;</span> by <a href='https://twitter.com/SiddharthShyniben'>Siddharth Shyniben</a>
+			<span>Made with <span class='heart'>&hearts;</span> by <a href='https://twitter.com/SiddharthShyniben'>Siddharth Shyniben</a></span>
+			<em id='isin' class='faded'></em>
 		</footer>
 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js' integrity='sha512-xwrAU5yhWwdTvvmMNheFn9IyuDbl/Kyghz2J3wQRDR8tyNmT8ZIYOd0V3iPYY/g4XdNPy0n/g0NvqGu9f0fPJQ==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js' integrity='sha512-IS1FyxQkiJHT1SAvLXBaJu1UTFSIw0GT/DuzxHl69djqyLoEwGmR2davcZUnB8M7ppi9nfTGZR/vdfqmWt+i6A==' crossorigin='anonymous' referrerpolicy='no-referrer'></script>
 		<script src='https://codemirror.net/3/addon/edit/closebrackets.js'></script>
 		<script src='main.js'></script>
+		<script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
 	</body>
 </html>
